@@ -1,0 +1,15 @@
+<main class="container">
+    <h2>Lista de Vehículos</h2>
+
+  <div class="cards">
+  @for (vehiculo of vehiculos; track vehiculo._id){
+      <div class="card">
+        <p><strong>Placa:</strong> {{vehiculo.placa}}</p>
+        <p><strong>Nombre:</strong> {{vehiculo.nombre}}</p>
+        <p><strong>Categoría:</strong> {{vehiculo.categoria}}</p>
+        <p><strong>Tipo lavado:</strong> {{vehiculo.tipoLavado}}</p>
+        <p><strong>Precio:</strong> {{vehiculo.precio}}</p>
+      </div>
+  }
+  </div>
+</main>
