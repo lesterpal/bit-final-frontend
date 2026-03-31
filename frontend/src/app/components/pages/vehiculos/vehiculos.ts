@@ -1,9 +1,10 @@
 import { Component, inject, OnInit} from '@angular/core';
 import { VehiculosService } from "../../../services/vehiculos";
+import { CurrencyPipe } from '@angular/common';
 
 @Component({
   selector: 'app-vehiculos',
-  imports: [],
+  imports: [CurrencyPipe],
   templateUrl: './vehiculos.html',
   styleUrl: './vehiculos.css',
 })
