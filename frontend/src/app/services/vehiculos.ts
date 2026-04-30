@@ -6,8 +6,8 @@ import { HttpClient } from "@angular/common/http";
 })
 export class VehiculosService {
   private httpClient = inject(HttpClient);
-  private apiUrl = 'http://localhost:3000/vehiculos';
-
+  //private apiUrl = 'http://localhost:3000/vehiculos';
+  private apiUrl = 'http://18.220.171.218:3000/vehiculos';
   getAllVehiculos(){
     return this.httpClient.get(this.apiUrl);
   }
